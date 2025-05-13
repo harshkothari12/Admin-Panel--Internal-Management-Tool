@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Login</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white min-h-screen flex items-center justify-center px-4">
-  <main class="w-full max-w-md bg-white p-6 rounded-lg shadow-md">
-    <div class="text-center mb-6">
-      <h1 class="text-3xl font-bold">CAMIOCA</h1>
-      <h5 class="text-lg text-gray-600">Intelligent Service</h5>
-    </div>
-    <p class="text-center font-semibold text-sm text-gray-700 mb-4">
-      Welcome back!
-    </p>
-    <form>
-      <div class="mb-4">
-        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
-        <input
-          id="email"
-          type="email"
-          class="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"
-          placeholder="example@mail.com"
-        />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- ✅ Correct Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Bootstrap for existing form classes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="container mx-auto px-3 sm:px-6 md:px-12 lg:px-48 xl:px-72">
+      <div class="flex justify-center items-center">
+        <h1 class="font-bold pt-19">CAMIOCA</h1>
       </div>
-      <div class="mb-4">
-        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
-        <input
-          id="password"
-          type="password"
-          class="w-full px-4 py-2 border border-gray-300 rounded-md bg-gray-100 focus:outline-none focus:ring-2 focus:ring-green-400"
-          placeholder="Password"
-        />
-        <div class="text-xs text-gray-500 mt-1">
-          Use at least 8 characters with 1 number and one special character.
-        </div>
+      <div class="flex justify-center items-center">
+        <h5>Intelligent Service</h5>
       </div>
-      <div class="flex justify-center">
-        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white py-2 rounded-md font-semibold">
-          LOG IN
-        </button>
+      <div>
+        <p class="pt-25 flex justify-center items-center font-bold text-sm">
+          Welcome back!
+        </p>
       </div>
-      <div class="mt-4 text-center">
-        <a href="#" class="text-gray-500 hover:underline text-sm">Forgot password?</a>
+      <div>
+        <form>
+          <div class="mb-3 px-125 pt-15">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <div>
+              <input
+                style="background-color: rgba(241, 241, 241, 1)"
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="example@mail.com"
+              />
+            </div>
+          </div>
+          <div class="mb-3 px-125">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input
+              style="background-color: rgba(241, 241, 241, 1)"
+              placeholder="Password"
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+            />
+            <div id="emailHelp" class="form-text">
+              Use at least 8 characters with 1 number, and one special
+              character.
+            </div>
+          </div>
+          <div class="flex justify-center items-center">
+            <button type="submit" class="btn btn-success w-70 rounded-5xl">LOG IN</button>
+          </div>
+          <div>
+            <u style="color: rgba(142, 142, 147, 1);" class="pt-2 flex justify-center items-center cursor-pointer">
+              Forgot password?
+            </u>
+          </div>
+        </form>
       </div>
-    </form>
-  </main>
-</body>
+    </main>
+  </body>
 </html>
