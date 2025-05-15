@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100">
+
   <!-- Header -->
   <header class="bg-white w-full p-4 shadow flex items-center justify-between">
     <!-- User Info -->
@@ -21,7 +20,7 @@
     </div>
 
     <!-- Search -->
-    <div class="flex items-center gap-2 text-sm text-gray-500 cursor-pointer ml-8">
+    <div class="flex items-center gap-2 text-sm text-gray-500 mr-[auto] ml-[30px] cursor-pointer">
       <img src="./search.png" alt="Search" class="w-5 h-5" />
       <span>Quick search</span>
     </div>
@@ -34,56 +33,54 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex p-5 gap-5">
-    
+  <main class="flex p-5 gap-6 relative">
+
     <!-- Sidebar -->
-    <aside class="bg-white w-[256px] h-[472px] p-4 rounded shadow space-y-4">
-      <nav class="flex flex-col space-y-3">
-        <a href="#" class="flex items-center gap-2 text-blue-500 hover:text-blue-600 transition">
+    <aside class="bg-white w-64 p-4 rounded shadow space-y-4">
+      <nav class="flex flex-col space-y-3 text-sm">
+        <a href="#" class="flex items-center gap-2 text-blue-500 font-medium">
           <img src="./dashboard.png" alt="Dashboard" class="w-4 h-4" />
-          <span>Dashboard</span>
+          Dashboard
         </a>
-        <a href="#" class="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition">
+        <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-gray-800">
           <img src="./people.png" alt="People" class="w-4 h-4" />
-          <span>People</span>
+          People
         </a>
-        <a href="#" class="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition">
-          <img src="./assignment.png" alt="Assignment" class="w-4 h-4" />
-          <span>Assignment</span>
+        <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-gray-800">
+          <img src="./assignment.png" alt="Projects" class="w-4 h-4" />
+          Projects
         </a>
-        <a href="#" class="flex items-center gap-2 text-gray-500 hover:text-gray-700 transition">
-          <img src="./people-fill.svg" alt="People" class="w-4 h-4" />
-          <span>People</span>
+        <a href="#" class="flex items-center gap-2 text-gray-600 hover:text-gray-800">
+          <img src="./people-fill.svg" alt="Help" class="w-4 h-4" />
+          Help
         </a>
       </nav>
     </aside>
 
     <!-- Dashboard Widgets -->
-    <section class="flex gap-4 flex-wrap">
+    <section class="flex flex-wrap gap-6">
       <!-- Widget 1 -->
-      <div class="bg-white w-[472px] h-[472px] p-4 rounded shadow flex flex-col justify-between">
-        <div>
-          <h1 class="font-medium mb-1">Company Facts</h1>
-          <p class="text-gray-500 mb-6">Employees</p>
-        </div>
-        <img src="./Diagrams.png" alt="Company Facts" class="w-full object-contain mt-auto" />
+      <div class="bg-white w-[472px] h-[472px] p-4 rounded shadow flex flex-col">
+        <h2 class="font-semibold text-lg mb-1">Company Facts</h2>
+        <p class="text-sm text-gray-500 mb-6">Employees</p>
+        <img src="./Diagrams.png" alt="Company Facts Chart" class="w-full object-contain mt-auto" />
       </div>
 
       <!-- Widget 2 -->
-      <div class="bg-white w-[472px] h-[472px] p-4 rounded shadow flex flex-col justify-between">
-        <h1 class="font-medium mb-6">Statistics</h1>
-        <img src="./Widget 2.png" alt="Statistics" class="w-full object-contain mt-auto" />
+      <div class="bg-white w-[472px] h-[472px] p-4 rounded shadow flex flex-col">
+        <h2 class="font-semibold text-lg mb-6">Statistics</h2>
+        <img src="./Widget 2.png" alt="Statistics Chart" class="w-full object-contain mt-auto" />
       </div>
-
-      <!-- Widget 3 (Add Widget Button) -->
-<div class="absolute top-[80px] left-[1288px] w-[129px] h-[40px] flex items-center justify-center">
-  <button class="flex items-center gap-2 w-full h-full bg-green-500 text-white rounded-full shadow-md hover:bg-green-600 text-sm px-3">
-    <span class="text-lg">+</span>
-    <span>Add</span>
-  </button>
-</div>
-
     </section>
+
+    <!-- Add Widget Button -->
+    <div class="absolute top-5 right-5">
+      <button class="flex items-center gap-2 px-5 py-2 bg-green-500 text-white rounded-full shadow hover:bg-green-600 transition text-sm">
+        <span class="text-lg">+</span>
+        <span>Add widget</span>
+      </button>
+    </div>
+
   </main>
 </body>
 </html>
