@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reports Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-700">
+
+  <!-- Top Bar -->
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <img src="https://i.pravatar.cc/40" alt="User" class="w-10 h-10 rounded-full" />
+      <span class="font-medium">Dominique Ch.</span>
+    </div>
+    <div class="flex items-center gap-4">
+      <input type="text" placeholder="Quick search" class="px-3 py-1.5 rounded border border-gray-300 text-sm" />
+      <img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-11/32/notification-icon.png" alt="Notifications" class="w-6 h-6" />
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="flex flex-col md:flex-row">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-60 bg-white p-4 space-y-4 border-r">
+      <nav class="flex flex-col gap-2 text-sm font-medium">
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded bg-gray-100 text-blue-600"><span>🏠</span> Dashboard</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>👥</span> People</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>📁</span> Projects</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>🗓</span> Calendar</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>📚</span> Training</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>⏱</span> Timesheet</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded bg-blue-100 text-blue-700"><span>📊</span> Reports</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>⚙️</span> Administration</a>
+        <a href="#" class="flex items-center gap-2 px-3 py-2 rounded hover:bg-gray-100"><span>❓</span> Help</a>
+      </nav>
+      <div class="text-xs text-gray-400 mt-10">CAMIOCA<br>Version: 1.0.0.11</div>
+    </aside>
+
+    <!-- Content Area -->
+    <main class="flex-1 p-6 space-y-6">
+
+      <!-- Report Sections -->
+      <div class="grid gap-4 md:grid-cols-2">
+        <!-- Public Reports -->
+        <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-semibold mb-2">Public reports</h2>
+          <ul class="text-sm space-y-1">
+            <li><strong>Calendar reports</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Company calendar →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Working days count →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Vacation report →</li>
+            <li><strong>Registry reports</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Project registry →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Active account and projects →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">People and assignments →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">People grades →</li>
+            <li><strong>Employee capability profile</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Capability profiles - status →</li>
+          </ul>
+        </div>
+
+        <!-- Restricted Reports -->
+        <div class="bg-white p-4 rounded shadow">
+          <h2 class="font-semibold mb-2">Restricted reports</h2>
+          <ul class="text-sm space-y-1">
+            <li><strong>Time reports</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Detailed timesheet →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Hours approved →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Lost hours →</li>
+            <li><strong>Cost and expenses reports</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Project cost and expenses →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Project expenses →</li>
+            <li><strong>Allocation and forecast reports</strong></li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Staff allocation →</li>
+            <li class="pl-3 text-blue-600 cursor-pointer">Resource forecast →</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Note Buttons -->
+      <div class="flex items-center justify-end gap-3 text-sm">
+        <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded border border-blue-200">Note: Built-in and External reports exist</span>
+        <button class="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-100">Built-in reports</button>
+        <button class="px-3 py-1 border border-blue-500 text-blue-500 rounded hover:bg-blue-100">External reports</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="flex gap-4 text-sm">
+        <button class="flex-1 px-4 py-2 bg-gray-200 rounded flex items-center justify-center gap-2">
+          ⚠️ User - Projects
+        </button>
+        <button class="flex-1 px-4 py-2 bg-blue-600 text-white rounded flex items-center justify-center gap-2">
+          👤 User by role
+        </button>
+        <button class="flex-1 px-4 py-2 bg-gray-200 rounded flex items-center justify-center gap-2">
+          📘 Bookkeeping report
+        </button>
+      </div>
+
+      <!-- Filter Section -->
+      <div class="bg-white p-4 rounded shadow space-y-4">
+        <h2 class="font-semibold">Filter</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <select class="border p-2 rounded text-sm">
+            <option>All Branches</option>
+          </select>
+          <select class="border p-2 rounded text-sm">
+            <option>All Divisions</option>
+          </select>
+          <select class="border p-2 rounded text-sm">
+            <option>All Projects</option>
+          </select>
+          <select class="border p-2 rounded text-sm">
+            <option>Other Roles</option>
+          </select>
+        </div>
+        <p class="text-xs text-blue-600">Note: All fields are selected separately and ANDed. No selection = Any.</p>
+
+        <div class="flex justify-end gap-4 mt-4">
+          <button class="px-4 py-2 border rounded hover:bg-gray-100">Clear</button>
+          <button class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700">Generate</button>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
